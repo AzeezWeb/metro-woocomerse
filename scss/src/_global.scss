@@ -1,0 +1,39 @@
+.container {
+  max-width: 95%;
+  width: 1320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container-full {
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+}
+
+.align-top {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+.align-bottom {
+  align-items: flex-end;
+}
+.start {
+  justify-content: start;
+}
+.center {
+  justify-content: center;
+}
+.end {
+  justify-content: center;
+}
+.between {
+  justify-content: space-between;
+}

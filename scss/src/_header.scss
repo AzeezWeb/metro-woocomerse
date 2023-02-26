@@ -1,11 +1,12 @@
 header {
   display: flex;
   width: 100%;
-  max-width: 1520px;
+  // max-width: 1520px;
   justify-content: center;
   background-color: $whiteColor;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 1000;
   transition: 0.4s;
   margin: 0 auto;
@@ -14,8 +15,8 @@ header {
 }
 
 .header__items {
-  width: 100%;
-  max-width: 1320px;
+  // width: 100%;
+  // max-width: 1320px;
   display: flex;
   padding: 15px 0;
   justify-content: space-between;
@@ -333,5 +334,32 @@ header {
   }
   .icons .menu__btn {
     display: block;
+  }
+}
+
+
+@media only screen and (max-width:578px) {
+  header {
+    width: 100%;
+    left: 0%;
+    padding: 0 10px;
+    transform: translateX(0%);
+  }
+  .container {
+    width: 100%;
+  }
+  .header__items {
+    width: 100%;
+  }
+  .icons {
+
+    .bx {
+      font-size: 22px;
+    }
+  }
+
+  .logo {
+    width: 80px;
+    min-width: 80px;
   }
 }

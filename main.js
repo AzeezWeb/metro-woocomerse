@@ -12,7 +12,23 @@ window.addEventListener('scroll', () => {
     upIcon.style.display = "none"
   }
 })
+let category = document.querySelector('.category__title');
+let categoryList = document.querySelector('.category__list');
 
+category.addEventListener('click', () => {
+  categoryList.classList.toggle('show-category')
+
+
+  console.log(categoryList.classList);
+
+  if(categoryList.classList == 'show-category') {
+    // category.children[0].style.display = 'none'
+    category.children[1].style.display = 'block'
+  } else {
+    category.children[0].style.display = 'block'
+    category.children[1].style.display = 'none'
+  }
+})
 
 let menuBtn = document.querySelector('.menu__btn');
 let secMenu = document.querySelector('.section-menu')
@@ -68,7 +84,7 @@ setInterval( () => {
     slideAction.children[0].classList.remove('slide__active')
     count = 0;
   }
-  console.log('function');
+  
 }, 8000)
 
 
